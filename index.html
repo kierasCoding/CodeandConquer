@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mord im Server-Raum</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="kopf">
+    <a class="kopf-titel" href="#start">Mord im Server-Raum</a>
+    <nav class="kopf-nav" aria-label="Hauptnavigation">
+      <a class="kopf-link" href="#uebersicht">Übersicht</a>
+      <a class="kopf-akte" href="#akte">Fallakte</a>
+    </nav>
+  </header>
+
+  <main id="ansicht" tabindex="-1"></main>
+
+  <dialog id="pdf-dialog" class="pdf-dialog" aria-labelledby="pdf-titel">
+    <div class="pdf-kopf">
+      <h2 id="pdf-titel"></h2>
+      <div class="pdf-aktionen">
+        <a id="pdf-download" class="pdf-knopf" download>Herunterladen</a>
+        <button id="pdf-schliessen" class="pdf-knopf" type="button">Schließen</button>
+      </div>
+    </div>
+    <iframe id="pdf-rahmen" title="PDF-Ansicht"></iframe>
+  </dialog>
+
+  <script src="js/inhalte.js"></script>
+  <script src="js/chat-raetsel1.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

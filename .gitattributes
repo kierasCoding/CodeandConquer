@@ -1,0 +1,3 @@
+# Dokumente byte-genau speichern (keine Zeilenende-Umwandlung)
+dokumente/** binary
+*.pdf binary
